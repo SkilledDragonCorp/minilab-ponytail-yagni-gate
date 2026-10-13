@@ -15,7 +15,8 @@
     "test:upstream": "bash scripts/run-upstream-tests.sh",
     "verify:skills-install": "bash scripts/verify-skills-install.sh",
     "audit": "bun audit",
-    "hooks:install": "bash scripts/install-githooks.sh"
+    "hooks:install": "bash scripts/install-githooks.sh",
+    "report": "bun run scripts/report.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",

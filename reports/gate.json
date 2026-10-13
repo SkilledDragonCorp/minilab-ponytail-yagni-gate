@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-10-13T14:52:41.529Z",
+  "lab": "minilab-ponytail-yagni-gate",
+  "keyless": true,
+  "ok": true,
+  "steps_passed": 3,
+  "steps_failed": 0,
+  "elapsed_ms": 66437,
+  "elapsed_s": 66.4,
+  "gate": {
+    "rules_checked": 3,
+    "rules_passed": 3,
+    "rules": [
+      {
+        "id": "canonical-skill-present",
+        "ok": true
+      },
+      {
+        "id": "no-agents-mirror",
+        "ok": true
+      },
+      {
+        "id": "no-cursor-mirror",
+        "ok": true
+      }
+    ]
+  },
+  "skills": {
+    "verified": 1,
+    "names": [
+      "ponytail"
+    ],
+    "cli": "skills@1.7.2",
+    "agent": "claude-code"
+  },
+  "upstream": {
+    "repo": "DietrichGebert/ponytail",
+    "pinned_commit": "2961b52fc1fe6a5a87c7a959a79512e5c2f3ffe5",
+    "test_command": "node --test tests/*.test.js && npm test --prefix pi-extension",
+    "ok": true,
+    "suites": 2,
+    "tests": 172,
+    "passed": 172,
+    "failed": 0,
+    "network_error": false,
+    "note": "node --test counts summed over the root suite and pi-extension"
+  },
+  "steps": [
+    {
+      "id": "gate:skill",
+      "ok": true,
+      "exit_code": 0,
+      "elapsed_ms": 44
+    },
+    {
+      "id": "verify:skills-install",
+      "ok": true,
+      "exit_code": 0,
+      "elapsed_ms": 3403
+    },
+    {
+      "id": "test:upstream",
+      "ok": true,
+      "exit_code": 0,
+      "elapsed_ms": 62990
+    }
+  ]
+}
