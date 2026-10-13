@@ -1,0 +1,24 @@
+{
+  "name": "@skilleddragon/minilab-ponytail-yagni-gate",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SkilledDragon minilab: ponytail skill YAGNI gate, upstream npm test harness, CI layout checks",
+  "engines": {
+    "node": ">=24.0.0",
+    "bun": ">=1.2.0"
+  },
+  "scripts": {
+    "test": "bun test",
+    "check:skills": "bun run scripts/check-skills-frontmatter.ts",
+    "gate:skill": "bun run scripts/check-ponytail-skill-gate.ts",
+    "test:upstream": "bash scripts/run-upstream-tests.sh",
+    "verify:skills-install": "bash scripts/verify-skills-install.sh",
+    "audit": "bun audit",
+    "hooks:install": "bash scripts/install-githooks.sh"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.8.3"
+  }
+}
